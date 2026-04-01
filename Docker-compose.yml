@@ -53,7 +53,7 @@ volumes:
 # Rebuild API :       docker compose up -d --build api
 #
 # URLS :
-#   Swagger UI   →  http://localhost:8000/docs
-#   API Health   →  http://localhost:8000/health
+#   Swagger UI   →  http://localhost:8006/docs
+#   API Health   →  http://localhost:8006/health
 #   MinIO UI     →  http://localhost:9001
 # ─────────────────────────────────────────────

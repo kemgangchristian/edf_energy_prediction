@@ -1,10 +1,12 @@
+import os
+
 # config.py — Configuration centralisée du projet EDF
 # Ce fichier est importé par tous les scripts du projet.
 
 # ─────────────────────────────────────────────
 # MINIO
 # ─────────────────────────────────────────────
-MINIO_ENDPOINT   = "localhost:9000"
+MINIO_ENDPOINT = os.getenv("MINIO_ENDPOINT", "localhost:9000")
 MINIO_ACCESS_KEY = "edf_admin"
 MINIO_SECRET_KEY = "edf_password_2024"
 MINIO_SECURE     = False   # True si HTTPS en production
